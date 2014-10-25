@@ -1,0 +1,15 @@
+".text.html.php:not(.source)":
+
+  "Scripts and styles from a single action hook":
+    "prefix": "wp-enqueue"
+    "body": """
+    /**
+    * ${1:Proper way to enqueue scripts and styles}
+    */
+    function ${2:theme_name_scripts}() {
+      // CSS
+      wp_enqueue_script( '${3:script-name}', get_template_directory_uri() . '${4:/js/example.css}', array(), '${5:1.0.0}', ${6:true} );
+    }
+
+    add_action( 'wp_enqueue_scripts', '${2:theme_name_scripts}' );
+    """

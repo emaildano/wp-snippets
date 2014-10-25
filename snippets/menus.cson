@@ -1,0 +1,7 @@
+".text.html.php:not(.source)":
+
+  "Displays a navigation menu created in the Appearance → Menus panel":
+    "prefix": "wp-nav"
+    "body": """
+    <?php wp_nav_menu( array('menu' => '${1:id, slug, or name}' )); ?>
+    """
