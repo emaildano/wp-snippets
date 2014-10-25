@@ -1,7 +1,7 @@
 {
   "name": "wp-snippets",
   "main": "./lib/wp-snippets",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "WordPress snippets for Atom",
   "activationEvents": [
     "wp-snippets:toggle"
@@ -11,6 +11,5 @@
   "engines": {
     "atom": ">0.50.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
