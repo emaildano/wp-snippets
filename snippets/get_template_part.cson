@@ -1,0 +1,7 @@
+".text.html.php:not(.source)":
+
+  "Load a template part into a template":
+    "prefix": "wp-temp"
+    "body": """
+    <?php get_template_part( '${1:path/to}', '${2:template}' ); ?>
+    """

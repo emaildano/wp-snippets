@@ -45,3 +45,10 @@ Snippet  | Description
 Snippet  | Description
 ------------- | -------------
 `wp-enqueue`  | Scripts and styles from a single action hook
+
+### Get Template Part
+[Codex](http://codex.wordpress.org/Function_Reference/get_template_part)
+
+Snippet  | Description
+------------- | -------------
+`wp-temp`  | Load a template part into a template
