@@ -1,0 +1,10 @@
+".text.html.php:not(.source)":
+
+  "The Loop is PHP code used by WordPress to display posts":
+    "prefix": "wp-loop"
+    "body": """
+    <?php if (have_posts()) : ?>
+      <?php while (have_posts()) : the_post(); ?>
+      <?php endwhile; ?>
+    <?php endif; ?>
+    """

@@ -1,7 +1,26 @@
-# WP Snippets
+# WP Snippets for Atom
 
-WordPress snippets for Atom.
+WordPress snippets for Atom
 
-## Snippets & README in development.
+## Snippets
 
-![A screenshot of your spankin' package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+### The Loop
+[Codex](http://codex.wordpress.org/The_Loop)
+
+Snippet  | Description
+------------- | -------------
+`wp-loop`  | Basic WordPress post loop
+
+### Menus
+[Codex](http://codex.wordpress.org/Function_Reference/wp_nav_menu)
+
+Snippet  | Description
+------------- | -------------
+`wp-nav`  | Displays a navigation menu created in the Appearance → Menus panel
+
+### Enqueue Script
+[Codex](http://codex.wordpress.org/Function_Reference/wp_enqueue_script)
+
+Snippet  | Description
+------------- | -------------
+`wp-enqueue`  | Scripts and styles from a single action hook
