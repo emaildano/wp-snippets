@@ -1,0 +1,7 @@
+".text.html.php:not(.source)":
+
+  "Displays or returns the title of the current post":
+    "prefix": "wp-title"
+    "body": """
+    <?php the_title(); ?>
+    """

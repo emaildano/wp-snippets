@@ -1,0 +1,7 @@
+".text.html.php:not(.source)":
+
+  "Displays the contents of the current post":
+    "prefix": "wp-content"
+    "body": """
+    <?php the_content(); ?>
+    """

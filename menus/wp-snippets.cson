@@ -1,13 +1,13 @@
 # See https://atom.io/docs/latest/creating-a-package#menus for more details
 'context-menu':
   '.overlayer':
-      'Enable wp-snippets': 'wp-snippets:toggle'
+      'Enable WP Snippets': 'wp-snippets:toggle'
 
 'menu': [
   {
     'label': 'Packages'
     'submenu': [
-      'label': 'wp-snippets'
+      'label': 'WP Snippets'
       'submenu': [
         { 'label': 'Toggle', 'command': 'wp-snippets:toggle' }
       ]

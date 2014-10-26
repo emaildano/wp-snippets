@@ -1,0 +1,11 @@
+".text.html.php:not(.source)":
+
+  "Display current posts thumbnail":
+    "prefix": "wp-thumb"
+    "body": """
+    <?php
+    if ( has_post_thumbnail() ) {
+      the_post_thumbnail();
+    }
+    ?>
+    """
