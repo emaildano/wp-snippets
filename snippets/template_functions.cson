@@ -5,3 +5,9 @@
     "body": """
     <?php get_template_part( '${1:path/to/template}' ); ?>
     """
+
+  "Load a template with the PHP include function":
+    "prefix": "wp-include"
+    "body": """
+    <?php include(locate_template('${1:path/to/template}.php')); ?>
+    """

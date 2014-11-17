@@ -48,9 +48,9 @@ Snippet  | Description
 ------------- | -------------
 `wp-enqueue`  | Scripts and styles from a single action hook
 
-### Get Template Part
-[Codex](http://codex.wordpress.org/Function_Reference/get_template_part)
+### Template Functions
 
 Snippet  | Description
 ------------- | -------------
 `wp-temp`  | Load a template part into a template
+`wp-include` | Load a template with the PHP include function
