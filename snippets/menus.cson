@@ -5,3 +5,29 @@
     "body": """
     <?php wp_nav_menu( array('menu' => '${1:id, slug, or name}' )); ?>
     """
+
+  "Display all nav options"
+    "prefix": "wp-nav-all"
+    "body" """
+    <?php
+    $args = array(
+    	'theme_location'  => '${1:}',
+    	'menu'            => '${2:id, slug, or name}',
+    	'container'       => '${3:div}',
+    	'container_class' => '${4:}',
+    	'container_id'    => '${5:}',
+    	'menu_class'      => '${6:menu}',
+    	'menu_id'         => '${7:}',
+    	'echo'            => '${8:true}',
+    	'fallback_cb'     => '${9:wp_page_menu}',
+    	'before'          => '${10:}',
+    	'after'           => '${11:}',
+    	'link_before'     => '${12:}',
+    	'link_after'      => '${13:}',
+    	'items_wrap'      => '${14:<ul id="%1$s" class="%2$s">%3$s</ul>}',
+    	'depth'           => ${15:0},
+    	'walker'          => '${16:}',
+    );
+    wp_nav_menu( $args );
+    ?>
+    """

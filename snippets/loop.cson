@@ -8,3 +8,27 @@
       <?php endwhile; ?>
     <?php endif; ?>
     """
+
+  "Blank query argument":
+    "prefix": "wp-arg"
+    "body": """
+    $args = array(
+        '${1:parameter}' => '${2:value}'
+    );
+    """
+
+  "Basic WP_Query":
+    "prefix": "wp-query"
+    "body": """
+    <?php
+    $args = array(
+      '${1:parameter}' => '${2:value}'
+    );
+    $query = new WP_Query( $args );
+    if ( $query->have_posts() ) : ?>
+        <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+          <?php the_title(); ?>
+        <?php endwhile; ?>
+    <?php endif; ?>
+    <?php wp_reset_postdata(); ?>
+    """
