@@ -1,7 +1,7 @@
 {
   "name": "wp-snippets",
   "main": "./lib/wp-snippets",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "description": "WordPress snippets for Atom",
   "activationEvents": [
     "wp-snippets:toggle"
