@@ -10,6 +10,8 @@ WordPress snippets for Atom
 Snippet  | Description
 ------------- | -------------
 `wp-loop`  | Basic WordPress post loop
+`wp-arg`  | Basic WP_Query argument
+`wp-query` | Basic WP_Query
 
 ### The Title
 [Codex](http://codex.wordpress.org/Function_Reference/the_title)
