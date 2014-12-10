@@ -6,9 +6,9 @@
     <?php wp_nav_menu( array('menu' => '${1:id, slug, or name}' )); ?>
     """
 
-  "Display all nav options"
+  "Display all nav options":
     "prefix": "wp-nav-all"
-    "body" """
+    "body": """
     <?php
     $args = array(
     	'theme_location'  => '${1:}',

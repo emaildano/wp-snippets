@@ -1,8 +1,4 @@
 # See https://atom.io/docs/latest/creating-a-package#menus for more details
-'context-menu':
-  '.overlayer':
-      'Enable WP Snippets': 'wp-snippets:toggle'
-
 'menu': [
   {
     'label': 'Packages'
