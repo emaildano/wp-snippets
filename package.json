@@ -1,10 +1,9 @@
 {
   "name": "wp-snippets",
   "main": "./lib/wp-snippets",
-  "version": "0.2.9",
+  "version": "0.2.10",
   "description": "A short description of your package",
-  "keywords": [
-  ],
+  "keywords": [],
   "activationCommands": {
     "atom-workspace": "wp-snippets:toggle"
   },
@@ -13,6 +12,5 @@
   "engines": {
     "atom": ">=0.174.0 <2.0.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
