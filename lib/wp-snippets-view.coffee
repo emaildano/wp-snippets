@@ -1,24 +1,22 @@
-{View} = require 'atom'
-
 module.exports =
-class WpSnippetsView extends View
-  @content: ->
-    @div class: 'wp-snippets overlay from-top', =>
-      @div "The WpSnippets package is Alive! It's ALIVE!", class: "message"
+class WpSnippetsView
+  constructor: (serializedState) ->
+    # Create root element
+    @element = document.createElement('div')
+    @element.classList.add('wp-snippets')
 
-  initialize: (serializeState) ->
-    atom.workspaceView.command "wp-snippets:toggle", => @toggle()
+    # Create message element
+    message = document.createElement('div')
+    message.textContent = "The WpSnippets package is Alive! It's ALIVE!"
+    message.classList.add('message')
+    @element.appendChild(message)
 
   # Returns an object that can be retrieved when package is activated
   serialize: ->
 
   # Tear down any state and detach
   destroy: ->
-    @detach()
+    @element.remove()
 
-  toggle: ->
-    console.log "WpSnippetsView was toggled!"
-    if @hasParent()
-      @detach()
-    else
-      atom.workspaceView.append(this)
+  getElement: ->
+    @element

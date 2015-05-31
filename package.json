@@ -2,14 +2,17 @@
   "name": "wp-snippets",
   "main": "./lib/wp-snippets",
   "version": "0.2.9",
-  "description": "WordPress snippets for Atom",
-  "activationEvents": [
-    "wp-snippets:toggle"
+  "description": "A short description of your package",
+  "keywords": [
   ],
-  "repository": "https://github.com/emaildano/wp-snippets",
+  "activationCommands": {
+    "atom-workspace": "wp-snippets:toggle"
+  },
+  "repository": "https://github.com/atom/wp-snippets",
   "license": "MIT",
   "engines": {
-    "atom": ">0.50.0"
+    "atom": ">=0.174.0 <2.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+  }
 }
